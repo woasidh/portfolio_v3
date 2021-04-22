@@ -18,3 +18,27 @@ function setIconHoverEffects() {
         })
     })
 }
+
+/* let currentScrollY = 0;
+let fired = false;
+let currentPage = 0;
+
+function handleScroll() {
+    const header = document.querySelector('header');
+    const height = window.innerHeight;
+    const sections = document.querySelector('section#contact');
+    window.addEventListener('scroll', (e) => {
+        console.log('scrolled');
+        if(!fired){
+            fired = true;
+            const scrollY = e.path[1].scrollY;
+            if(scrollY > currentScrollY){
+                goDown();
+            }else{
+                console.log('up');
+            }
+            currentScrollY = scrollY;
+        }
+    })
+} */
+
