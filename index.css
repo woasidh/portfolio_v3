@@ -265,6 +265,7 @@ section#title {
 
 .aboutText {
     flex-basis: 60%;
+    min-width: 50%;
     color: var(--gray);
 }
 
@@ -667,4 +668,107 @@ button.contactInfo{
 
 .skill__util__item>span{
     color : var(--main-highlight);
+}
+
+@media screen and (max-width: 980px) {
+    .skiil__content{
+        width : 60vw;
+        padding : 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fixedBar{
+        display : none;
+    }
+    .skillContainer{
+        flex-direction: column;
+    }
+    .skill_items{
+        display : flex;
+        margin-bottom: 20px;
+    }
+    .skill_content__container{
+        font-size: 13px;
+    }
+    .titleContainer>div:nth-child(1){
+        font-size: 10px !important;
+    }
+    .titleContainer>div:nth-child(2){
+        font-size: 30px !important;
+    }
+    .titleContainer>div:nth-child(3){
+        font-size: 30px !important;
+    }
+    .titleContainer>p{
+        font-size: 12px !important;
+    }
+    section{
+        margin : 100px 0 !important;
+    }
+
+    @media screen and (max-width: 900px) {
+        .aboutContent{
+            flex-direction: column;
+        }
+        .aboutText{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .workContent__right{
+        font-size: 10px;
+    }
+    .projectStacks > span{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .aboutText{
+        width : 95vw;
+        font-size: 10px;
+    }
+    .stacks{
+        grid-template-columns: repeat(1, 100vw) !important;
+    }
+    .aboutAvatarContainer{
+        margin-left: 0;
+    }
+    .aboutAvatar{
+        margin : auto;
+        width : 90vw;
+    }
+    .aboutAvatarBackground{
+        display : none;
+    }
+    .Container#contact>div:nth-child(2){
+        font-size: 30px !important;
+    }
+    .Container#contact>p{
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .header_categories{
+        font-size: 10px;
+    }
+    .header__logo{
+        display : none;
+    }
+    header{
+        padding : 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header{
+        display : none;
+    }
 }
