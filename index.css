@@ -19,7 +19,7 @@ button {
     font-size: inherit;
 }
 
-p{
+p {
     line-height: 150%;
 }
 
@@ -67,7 +67,7 @@ header {
     transition: all 0.2s linear;
 }
 
-header.hide{
+header.hide {
     transform: translateY(-70px);
 }
 
@@ -188,7 +188,7 @@ li.header__category:before {
 
 section {
     max-width: 80vw;
-    margin : 150px 0px;
+    margin: 150px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,6 +382,10 @@ section#title {
     margin-bottom: 15px;
 }
 
+.workContent:nth-child(even) .workContent__right>p {
+    text-align: left;
+}
+
 .workContent:nth-child(odd) .workContent__right>p {
     float: left;
 }
@@ -465,7 +469,7 @@ section#work {
 
 .subproject__boxes {
     display: grid;
-    width : 100%;
+    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
 }
@@ -477,9 +481,10 @@ section#work {
     transition: all 0.1s linear;
 }
 
-.subproject__box:hover{
+.subproject__box:hover {
     transform: translateY(-10px);
 }
+
 .sub__icons {
     display: flex;
     justify-content: space-between;
@@ -503,7 +508,7 @@ section#work {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    transition : all 0.1s linear;
+    transition: all 0.1s linear;
 }
 
 .sub__git:hover {
@@ -538,229 +543,230 @@ section#work {
 
 /* contact */
 
-.Container#contact{
+.Container#contact {
     height: fit-content;
-    color : white;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.Container#contact > div:nth-child(1){
-    color : var(--main-highlight);
+.Container#contact>div:nth-child(1) {
+    color: var(--main-highlight);
     margin-bottom: 15px;
     font-size: 22px;
 }
 
-.Container#contact > div:nth-child(2){
-    color : var(--gray-light);
+.Container#contact>div:nth-child(2) {
+    color: var(--gray-light);
     font-size: 55px;
     font-weight: 700;
     margin-bottom: 18px;
 }
 
-.Container#contact>p{
-    width : 60%;
+.Container#contact>p {
+    width: 60%;
     margin-bottom: 20px;
-    color : var(--gray);
+    color: var(--gray);
     text-align: center;
     line-height: 150%;
 }
 
-button.contactInfo{
-    border : 1px solid var(--main-highlight);
+button.contactInfo {
+    border: 1px solid var(--main-highlight);
     border-radius: 5px;
-    color : var(--main-highlight);
-    padding : 0.5rem 1rem;
+    color: var(--main-highlight);
+    padding: 0.5rem 1rem;
     margin-bottom: 20px;
 }
 
 /* info */
-.contact__info{
+
+.contact__info {
     text-align: center;
     transition: all 0.4s linear;
     visibility: hidden;
     transform: translateY(-20px);
 }
 
-.contact__info.active{
-    visibility :visible;
+.contact__info.active {
+    visibility: visible;
     transform: translateY(0px);
 }
 
-.contact__info>div{
+.contact__info>div {
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 /* skills */
-.Container#skills{
-    width : 100%;
+
+.Container#skills {
+    width: 100%;
 }
 
-.skillContainer{
-    display : flex;
-    color : var(--gray);
+.skillContainer {
+    display: flex;
+    color: var(--gray);
 }
 
-.skill_items>button{
-    display : block;
-    border-left : 2px solid var(--gray);
-    width : 85px;
-    height :40px;
+.skill_items>button {
+    display: block;
+    border-left: 2px solid var(--gray);
+    width: 85px;
+    height: 40px;
 }
 
-.skill_items>button.active{
-    border-left : 2px solid var(--main-highlight);
+.skill_items>button.active {
+    border-left: 2px solid var(--main-highlight);
     background-color: var(--box-background);
 }
 
-.skill_content__container{
-    position : relative;
+.skill_content__container {
+    position: relative;
 }
 
-.skiil__content{
+.skiil__content {
     width: 939px;
-    height : 250px;
+    height: 250px;
     padding-left: 50px;
     padding-right: 200px;
-    display : none;
+    display: none;
 }
 
-.skiil__content.active{
-    display : block;
+.skiil__content.active {
+    display: block;
 }
 
-.web__item__top{
-    display : flex;
+.web__item__top {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width : 100%;
+    width: 100%;
     margin-bottom: 5px;
 }
 
-.web__item__line__background{
-    width : 100%;
-    height  :5px;
-    position : relative;
-    background-color : var(--gray);
+.web__item__line__background {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    background-color: var(--gray);
     border-radius: 10px;
     margin-bottom: 5px;
 }
 
-.web__item__percent{
-    position : absolute;
-    width : 80%;
-    height  :5px;
-    background-color : var(--main-highlight);
+.web__item__percent {
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    background-color: var(--main-highlight);
     border-radius: 10px;
 }
 
-.skill__util__item:before{
+.skill__util__item:before {
     content: "▹";
     color: var(--main-highlight);
 }
 
-.skill__util__item{
+.skill__util__item {
     word-wrap: break-word;
 }
 
-.skill__util__item>span{
-    color : var(--main-highlight);
+.skill__util__item>span {
+    color: var(--main-highlight);
 }
 
 @media screen and (max-width: 980px) {
-    .skiil__content{
-        width : 60vw;
-        padding : 0;
+    .skiil__content {
+        width: 60vw;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .fixedBar{
-        display : none;
+    .fixedBar {
+        display: none;
     }
-    .skillContainer{
+    .skillContainer {
         flex-direction: column;
     }
-    .skill_items{
-        display : flex;
+    .skill_items {
+        display: flex;
         margin-bottom: 20px;
     }
-    .skill_content__container{
+    .skill_content__container {
         font-size: 13px;
     }
-    .titleContainer>div:nth-child(1){
+    .titleContainer>div:nth-child(1) {
         font-size: 10px !important;
     }
-    .titleContainer>div:nth-child(2){
+    .titleContainer>div:nth-child(2) {
         font-size: 30px !important;
     }
-    .titleContainer>div:nth-child(3){
+    .titleContainer>div:nth-child(3) {
         font-size: 30px !important;
     }
-    .titleContainer>p{
+    .titleContainer>p {
         font-size: 12px !important;
     }
-    section{
-        margin : 100px 0 !important;
+    section {
+        margin: 100px 0 !important;
     }
-
     @media screen and (max-width: 900px) {
-        .aboutContent{
+        .aboutContent {
             flex-direction: column;
         }
-        .aboutText{
+        .aboutText {
             margin-bottom: 30px;
         }
     }
 }
 
 @media screen and (max-width: 650px) {
-    .workContent__right{
+    .workContent__right {
         font-size: 10px;
     }
-    .projectStacks > span{
+    .projectStacks>span {
         font-size: 10px;
     }
 }
 
 @media screen and (max-width: 440px) {
-    .aboutText{
-        width : 95vw;
+    .aboutText {
+        width: 95vw;
         font-size: 10px;
     }
-    .stacks{
+    .stacks {
         grid-template-columns: repeat(1, 100vw) !important;
     }
-    .aboutAvatarContainer{
+    .aboutAvatarContainer {
         margin-left: 0;
     }
-    .aboutAvatar{
-        margin : auto;
-        width : 90vw;
+    .aboutAvatar {
+        margin: auto;
+        width: 90vw;
     }
-    .aboutAvatarBackground{
-        display : none;
+    .aboutAvatarBackground {
+        display: none;
     }
-    .Container#contact>div:nth-child(2){
+    .Container#contact>div:nth-child(2) {
         font-size: 30px !important;
     }
-    .Container#contact>p{
+    .Container#contact>p {
         font-size: 10px !important;
     }
 }
 
 @media screen and (max-width: 487px) {
-    .header_categories{
+    .header_categories {
         font-size: 10px;
     }
-    .header__logo{
-        display : none;
+    .header__logo {
+        display: none;
     }
-    header{
-        padding : 0;
+    header {
+        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -768,7 +774,7 @@ button.contactInfo{
 }
 
 @media screen and (max-width: 300px) {
-    header{
-        display : none;
+    header {
+        display: none;
     }
 }

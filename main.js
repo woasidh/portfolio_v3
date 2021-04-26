@@ -5,7 +5,7 @@ window.onload = () => {
     setPercentage();
     manageHeader();
     pageSelector();
-    alert(detectMob());
+    /* alert(detectMob()); */
 }
 
 function setIconHoverEffects() {
@@ -86,7 +86,7 @@ function pageSelector() {
     })
 }
 
-function detectMob() {
+/* function detectMob() {
     const toMatch = [
         /Android/i,
         /webOS/i,
@@ -100,4 +100,4 @@ function detectMob() {
     return toMatch.some((toMatchItem) => {
         return navigator.userAgent.match(toMatchItem);
     });
-}
+} */
