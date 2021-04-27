@@ -1,5 +1,4 @@
 window.onload = () => {
-    document.title = "Minwoo Choi";
     setIconHoverEffects();
     showContact();
     selectSkill();
