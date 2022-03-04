@@ -179,6 +179,8 @@ li.header__category:before {
 }
 
 #mainContainer {
+    margin: 0 auto;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -241,7 +243,7 @@ section#title {
     margin-bottom: 30px;
 }
 
-.Title>h1:before {
+.Title>h1::before {
     content: "01.";
     color: var(--main-highlight);
     margin-right: 10px;
@@ -635,8 +637,20 @@ button.contactInfo {
     display: none;
 }
 
+.skiil__content {
+    width: 939px;
+    height: 250px;
+    padding-left: 50px;
+    padding-right: 200px;
+    display: none;
+}
+
 .skiil__content.active {
     display: block;
+}
+
+.skill__web__item {
+    margin-bottom: 10px;
 }
 
 .web__item__top {
@@ -667,10 +681,12 @@ button.contactInfo {
 .skill__util__item:before {
     content: "▹";
     color: var(--main-highlight);
+    margin-right: 5px;
 }
 
 .skill__util__item {
     word-wrap: break-word;
+    margin-bottom: 10px;
 }
 
 .skill__util__item>span {
