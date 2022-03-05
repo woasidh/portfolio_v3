@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: var(--main-highlight)
 }
 
 button {
@@ -200,11 +201,20 @@ section#title {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top: 0;
+    height: 100vh; */
 }
 
 .titleContainer {
     width: 100%;
     text-align: left;
+}
+
+.titleContainer .main_intro {
+    margin-top: 40px;
+    line-height: 200%;
+    font-weight: 400;
+    font-size: 22px;
 }
 
 .titleContainer>div:nth-child(1) {
@@ -276,6 +286,10 @@ section#title {
     line-height: 150%;
 }
 
+.aboutText p span {
+    color: var(--main-highlight);
+}
+
 .stacks {
     display: grid;
     grid-template-columns: repeat(3, minmax(140px, 180px));
@@ -345,6 +359,7 @@ section#title {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 }
 
 .work__thumbnail>a {
@@ -352,6 +367,16 @@ section#title {
     width: 100%;
     height: 100%;
 }
+
+.work__thumbnail .onDetail_wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom : 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 .workContent__right {
     width: 50%;
@@ -568,7 +593,7 @@ section#work {
 }
 
 .Container#contact>p {
-    width: 60%;
+    width: 100%;
     margin-bottom: 20px;
     color: var(--gray);
     text-align: center;
@@ -637,12 +662,19 @@ button.contactInfo {
     display: none;
 }
 
-.skiil__content {
-    width: 939px;
-    height: 250px;
-    padding-left: 50px;
-    padding-right: 200px;
-    display: none;
+.skiil__content > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skiil__content > ul > li {
+    margin-bottom: 10px;
+}
+
+.skiil__content > ul > li:before{
+    content: "▹";
+    color: var(--main-highlight);
+    margin-right: 5px;
 }
 
 .skiil__content.active {
