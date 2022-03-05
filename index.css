@@ -253,8 +253,26 @@ section#title {
     margin-bottom: 30px;
 }
 
-.Title>h1::before {
-    content: "01.";
+#career .Title>h1:before {
+    content: "05. ";
+    color: var(--main-highlight);
+    margin-right: 10px;
+}
+
+#about .Title>h1:before {
+    content: "01. ";
+    color: var(--main-highlight);
+    margin-right: 10px;
+}
+
+#skills .Title>h1:before {
+    content: "02. ";
+    color: var(--main-highlight);
+    margin-right: 10px;
+}
+
+#work .Title>h1:before {
+    content: "03. ";
     color: var(--main-highlight);
     margin-right: 10px;
 }
@@ -368,17 +386,33 @@ section#title {
     height: 100%;
 }
 
+.work__thumbnail:hover .onDetail_wrapper {
+    visibility: visible;
+}
+
 .work__thumbnail .onDetail_wrapper {
+    visibility: hidden;
     position: absolute;
     left: 0;
     right: 0;
     bottom : 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__thumbnail .onDetail_wrapper a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 
 .workContent__right {
+    z-index: 2;
     width: 50%;
 }
 
@@ -451,7 +485,7 @@ section#title {
 }
 
 .projectLinks>a:nth-child(2) {
-    background-image: url('./imgs/url_white.png');
+    background-image: url('./imgs/web_white.png');
 }
 
 .projectLinks>a:hover {
@@ -464,7 +498,7 @@ section#title {
 }
 
 .projectLinks>a:nth-child(2):hover {
-    background-image: url('./imgs/url_theme.png');
+    background-image: url('./imgs/web_theme.png');
     transform: scale(1.2);
 }
 
@@ -725,6 +759,41 @@ button.contactInfo {
     color: var(--main-highlight);
 }
 
+.item_desc_container {
+    display: flex;
+}
+
+.item_desc_container span {
+    min-width: 140px;
+}
+
+.item_desc_container .career_item_content {
+    margin-left: 15px;
+}
+
+.career_item {
+    margin-bottom: 5px;
+}
+
+.career_item_content ul {
+    margin-left: 20px;
+}
+
+.career_item_content span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.career_item_content ul li:before {
+    content: "▹";
+    color: var(--main-highlight);
+    margin-right: 5px;
+}
+
+.career_item_content ul li {
+    margin-bottom: 5px;
+}
+
 @media screen and (max-width: 980px) {
     .skiil__content {
         width: 60vw;
@@ -777,6 +846,12 @@ button.contactInfo {
     }
     .projectStacks>span {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .career_item_content {
+        font-size: 14px;
     }
 }
 
