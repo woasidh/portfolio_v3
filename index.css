@@ -661,6 +661,15 @@ button.contactInfo {
     margin-bottom: 5px;
 }
 
+.contact__info>a {
+    color: white;
+}
+
+.contact__info>a:hover {
+    text-decoration: underline;
+}
+
+
 /* skills */
 
 .Container#skills {
